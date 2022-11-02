@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-image: url('../img/pattern.png');
+    background-size: contain;
+    height: 23vh;
+    padding: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.h2_logo {
+    font-size: 0.9rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+.slogan {
+    width: 70%;
+    height: 23vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.slogan_p {
+    font-size: 0.8rem;
+    padding-top: 1.5vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.slogan_button {
+    font-size: 0.7rem;
+    padding: 7px 18px;
+    background: #FB9475;
+    border-radius: 24px;
+    width: fit-content;
+    color: white;
+    margin-top: 3vh;
+}
+
+.header_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+   justify-content: center;
+}
+
+.socials {
+    gap: 0.8vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+/*section*/
+
+section {
+    padding: 30px;
+}
+
+.video_img {
+    height: 13vh;
+    width: 40vw;
+    position: absolute;
+
+}
+
+.about_p {
+    font-size: 0.8rem;
+    padding-top: 20px;
+}
+
+.about_p-desc {
+    font-size: 0.7rem;
+    padding-top: 20px;
+}
+
+
