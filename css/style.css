@@ -209,3 +209,31 @@ h3 {
 .masters_section {
     background-color: #F8F6F7;
 }
+
+/*section-masters*/
+
+.masters_carts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.masters_cart {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.masters_text {
+    margin-top: 20px;
+}
+
+.master_cart_text-desk {
+    font-size: 0.8rem;
+}
+
+.master_cart_text-practice {
+    font-weight: lighter;
+    font-size: 0.68rem;
+}
