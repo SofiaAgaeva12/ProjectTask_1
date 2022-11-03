@@ -10,23 +10,39 @@
 </head>
 <body>
 <header>
-    <div>
-        <h2 class="h2_logo">Мир красоты</h2>
-        <div>
+    <div class="header_menu">
+        <div class="menu-burger">
+            <img src="img/menu.png" alt="menu" class="menu_img"  id="button"/>
+            <h2 class="h2_logo">Мир красоты</h2>
+            <div class="menu_items">
+
+                <p class="menu_items-p">Услуги и цены</p>
+                <p class="menu_items-p">Мастера</p>
+                <p class="menu_items-p">Наши работы</p>
+                <p class="menu_items-p">О нас</p>
+                <p class="menu_items-p">Контакты</p>
+            </div>
+        </div>
+        <div id="number-info">
+            <p class="number">8 (499) 686-17-62</p>
+            <p class="number_exp">с 10.00 до 19.00 без выходных</p>
         </div>
     </div>
 
     <div  class="header_block">
         <div class="slogan">
-            <h1>Создай свой образ
+            <h1>Создай свой образ <br>
                 вместе с нами</h1>
             <p class="slogan_p">Идеальный образ за 60 минут</p>
             <a href="#" class="button slogan_button">Записаться онлайн</a>
         </div>
+        <div class="girl">
+            <img src="img/girl.png" height="510" width="524" alt="girl"/>
+        </div>
         <div class="socials">
-            <img src="img/logo_inst.png" height="28" width="28" alt="logo socials"/>
-            <img src="img/logo_vk.png" height="28" width="28" alt="logo socials"/>
-            <img src="img/logo_youtube.png" height="28" width="28" alt="logo socials"/>
+            <img src="img/logos/logo_inst.png" height="28" width="28" alt="logo socials"/>
+            <img src="img/logos/logo_vk.png" height="28" width="28" alt="logo socials"/>
+            <img src="img/logos/logo_youtube.png" height="28" width="28" alt="logo socials"/>
         </div>
     </div>
 
@@ -178,25 +194,25 @@
     <p class="masters_text">Дружная команда настоящих профессионалов</p>
     <div class="masters_carts">
         <div class="masters_cart">
-            <img src="img/master-1.png" alt="image of master">
+            <img src="img/masters/master-1.png" alt="image of master">
             <h3 class="master_cart_topic">Краснова Ирина</h3>
             <p class="master_cart_text-desk">Мастер ногтевого сервиса</p>
             <p class="master_cart_text-practice">ОПЫТ РАБОТЫ 5 ЛЕТ</p>
         </div>
         <div class="masters_cart">
-            <img src="img/master-2.png" alt="image of master">
+            <img src="img/masters/master-2.png" alt="image of master">
             <h3 class="master_cart_topic">Калилова Жанна</h3>
             <p class="master_cart_text-desk">Визажист-стилист</p>
             <p class="master_cart_text-practice">ОПЫТ РАБОТЫ 5 ЛЕТ</p>
         </div>
         <div class="masters_cart">
-            <img src="img/master-3.png" alt="image of master">
+            <img src="img/masters/master-3.png" alt="image of master">
             <h3 class="master_cart_topic">Киселева Алина</h3>
             <p class="master_cart_text-desk">Парикмахер</p>
             <p class="master_cart_text-practice">ОПЫТ РАБОТЫ 5 ЛЕТ</p>
         </div>
         <div class="masters_cart">
-            <img src="img/master-4.png" alt="image of master">
+            <img src="img/masters/master-4.png" alt="image of master">
             <h3 class="master_cart_topic">Иванова Елена</h3>
             <p class="master_cart_text-desk">Мастер ногтевого сервиса</p>
             <p class="master_cart_text-practice">ОПЫТ РАБОТЫ 5 ЛЕТ</p>
@@ -205,7 +221,34 @@
 
 </section>
 <section>
+    <div class="works_header">
+        <h2>Наши работы</h2>
+        <div class="arrows">
+            <img src="img/arrows/arrow-left.png" height="16" width="19" alt="arrow" class="arrow-left"/>
+            <img src="img/arrows/arrow-right.png" height="16" width="19" alt="arrow"/>
+            <img src="img/arrows/ellipse.png" height="40" width="40" alt="ellipse" class="ellipse"/>
+        </div>
+
+    </div>
+    <div class="works">
+        <img src="img/works/work-1.png" height="338" width="338" alt="image of works"/>
+        <img src="img/works/work-2.png" height="338" width="338" alt="image of works"/>
+        <img src="img/works/work-3.png" height="338" width="338" alt="image of works"/>
+        <img src="img/works/work-4.png" height="338" width="338" alt="image of works"/>
+    </div>
+
+    <p class="works_desc">Бренды, которые мы используем в работе</p>
+
+    <div class="brands">
+        <img src="img/brands/brand-1.png" height="66" width="93" alt="brand" class="brands_img"/>
+        <img src="img/brands/brand-2.png" height="66" width="120" alt="brand" class="brands_img"/>
+        <img src="img/brands/brand-3.png" height="41" width="109" alt="brand" class="brands_img"/>
+        <img src="img/brands/brand-4.png" height="61" width="114" alt="brand" class="brands_img"/>
+        <img src="img/brands/brand-5.png" height="37" width="136" alt="brand" class="brands_img"/>
+    </div>
+
 
 </section>
+<script src="scripts/burger.js"></script>
 </body>
 </html>

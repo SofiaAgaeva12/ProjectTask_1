@@ -10,20 +10,71 @@ body {
 header {
     background-image: url('../img/pattern.png');
     background-size: contain;
-    height: 23vh;
     padding: 30px;
+
 }
 
 a {
     text-decoration: none;
+    cursor: pointer;
+}
+
+.header_menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_items {
+    display: none;
+}
+.number-info {
+    display: flex;
+}
+
+.menu_items {
+    flex-direction: column;
+    gap: 15px;
+    background: image('../img/pattern.png');
+    width: 200px;
+    transform: translateX(-100px) translateY(50px);
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+
+
+.menu_items-p:hover {
+    color: #00BF78;
 }
 
 .h2_logo {
+    font-size: 1rem;
+    margin-top: 6px;
+}
+.menu_img {
+    height: 30px;
+    width: 30px;
+}
+
+.number {
     font-size: 0.9rem;
+    margin-bottom: 6px;
+    text-align: end;
+}
+
+.number_exp {
+    font-size: 0.6rem;
+}
+
+.menu-burger {
+    display: flex;
+    gap: 10px;
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .topic {
@@ -31,7 +82,6 @@ h1 {
 }
 
 .slogan {
-    width: 70%;
     height: 23vh;
     display: flex;
     flex-direction: column;
@@ -39,17 +89,18 @@ h1 {
 }
 
 .slogan_p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     padding-top: 1.5vh;
     display: flex;
     flex-direction: column;
-
+    text-align: center;
 }
 
 .slogan_button {
     font-size: 0.9rem;
     padding: 7px 18px;
     margin-top: 3vh;
+    align-self: center;
 }
 
 .button {
@@ -60,17 +111,81 @@ h1 {
 }
 
 
-.header_block {
+.girl {
+    display: none;
+}
+
+@media screen and (min-width: 900px) {
+    .menu_items {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 36px;
+    font-size: 1rem;
+    }
+
+    .menu_items-p {
+        font-size: 0.9rem;
+        padding-top: 10px;
+    }
+
+    .menu-burger {
+        gap: unset;
+        justify-content: space-between;
+        width: 56vw;
+    }
+
+    .girl {
+        display: flex;
+    }
+    header {
+        padding: 30px 167px;
+    }
+    h1 {
+        font-size: 2.7rem;
+        padding-bottom: 5px;
+        text-align: justify;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .h2_logo {
+        font-size: 1.3rem;
+    }
+
+    .slogan {
+        width: 40%;
+        height: 55vh;
+    }
+    .slogan_button {
+        padding: 10px 25px;
+        margin-top: 7vh;
+        font-size: 0.8rem;
+        align-self: auto;
+    }
+    .socials {
+        flex-direction: column;
+        align-self: auto;
+    }
+    .slogan_p {
+        text-align: justify;
+    }
+    .header_block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .menu_img {
+        display: none;
+    }
+
 }
 
 .socials {
-    gap: 0.8vh;
+    gap: 1.5vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 /*section-about*/
 
@@ -236,4 +351,49 @@ h3 {
 .master_cart_text-practice {
     font-weight: lighter;
     font-size: 0.68rem;
+}
+
+/*section-works*/
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.works_header {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow-left {
+    margin-right: 20px;
+}
+
+.ellipse {
+    display: none;
+    position: absolute;
+}
+
+.arrows {
+    display: none;
+}
+
+.works_desc {
+    margin: 40px auto;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.brands {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.brands_img {
+    filter: opacity(0.5);
 }
