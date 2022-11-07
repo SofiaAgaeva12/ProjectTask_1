@@ -464,9 +464,26 @@ h3 {
 .works__images {
     display: flex;
     flex-wrap: wrap;
-    gap: 29px;
     margin-top: 20px;
     justify-content: center;
+}
+.works__image {
+    position: relative;
+    z-index: 3;
+}
+
+.works__image:hover {
+    filter: brightness(70%);
+    z-index: 1;
+    transform: translateY(-40px);
+}
+.works__image__background-hover {
+    color: #FFFFFF;
+    position: relative;
+    bottom: 62%;
+    z-index: 2;
+    font-size: 15px;
+    text-align: center;
 }
 
 .works__arrows {
@@ -509,6 +526,9 @@ h3 {
         gap: 10px;
         align-items: center;
         margin-right: 177px;
+    }
+    .works__images {
+       gap: 29px;
     }
 }
 
