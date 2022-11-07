@@ -461,6 +461,14 @@ h3 {
     }
 }
 
+@media screen and (min-width: 700px) and (max-width: 1263px) {
+
+    .goods_prices {
+        width: 50vw;
+        margin-left: 20vw;
+    }
+}
+
 .goods_price {
     display: flex;
     justify-content: space-between;
@@ -647,21 +655,30 @@ h3 {
     padding: 20px;
 }
 
-@media screen and (min-width: 1263px) {
+@media screen and (min-width: 1200px) {
     .brands {
         margin-bottom: 113px;
     }
-    .contacts {
-        height: 40vh;
-    }
     .contacts__form {
        width: 445px;
-       margin-right: 90px;
         padding: 40px;
     }
     .contacts__input {
         width: 374px;
         height: 14px;
+    }
+    .contacts {
+
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .contacts__form {
+        width: 445px;
+        padding: 40px;
+    }
+    .contacts {
+        justify-content: center;
     }
 }
 
