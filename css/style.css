@@ -3,6 +3,12 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf")
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -10,7 +16,7 @@ body {
 header {
     background-image: url('../img/pattern.png');
     background-size: contain;
-    padding: 30px;
+    padding: 30px 30px 0 30px;
 
 }
 
@@ -99,7 +105,7 @@ a {
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 48px;
     }
     .menu__burger__img-close-flex {
         display: block;
@@ -115,6 +121,7 @@ a {
 
 .menu__item-p:hover {
     color: #00BF78;
+    cursor: pointer;
 }
 
 .h2_logo {
@@ -127,7 +134,7 @@ a {
 }
 
 .number {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     margin-bottom: 6px;
     text-align: end;
 }
@@ -158,7 +165,7 @@ h1 {
 }
 
 .slogan-p {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     padding-top: 1.5vh;
     display: flex;
     flex-direction: column;
@@ -166,7 +173,7 @@ h1 {
 }
 
 .slogan__button {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     padding: 9px 25px;
     margin-top: 3vh;
     align-self: center;
@@ -186,6 +193,9 @@ h1 {
 }
 
 @media screen and (min-width: 1263px) {
+    .burger__button {
+        display: none;
+    }
 
     h2 {
         font-size: 48px;
@@ -211,12 +221,14 @@ h1 {
 
     .header__girl {
         display: flex;
+        align-items: flex-end;
     }
     header {
-        padding: 30px 167px;
+        padding: 30px 167px 0 167px;
     }
+
     .section {
-        padding: 80px 164px;
+        padding: 50px 164px;
     }
     .works__h2 {
         padding-left: 164px;
@@ -235,17 +247,18 @@ h1 {
 
     .header__slogan {
         width: 40%;
-        height: 55vh;
+        height: 47vh;
     }
     .slogan__button {
-        padding: 10px 25px;
+        padding: 13px 30px;
         margin-top: 7vh;
         font-size: 0.8rem;
         align-self: auto;
     }
     .socials {
         flex-direction: column;
-        align-self: auto;
+        justify-content: flex-end;
+        transform: translateX(40px);
     }
     .slogan-p {
         text-align: justify;
@@ -280,12 +293,11 @@ h1 {
     }
 
     .video__group {
-        transform: translateY(-180px);
+        transform: translateY(-200px);
     }
 
     .about__p {
         font-size: 20px;
-        padding-top: 40px;
         line-height: 150%;
     }
 
@@ -293,6 +305,11 @@ h1 {
         font-size: 16px;
         padding-top: 20px;
         line-height: 150%;
+    }
+    .video__display-img {
+        height: 60px;
+        width: 60px;
+        padding-left: 60px;
     }
 
 }
@@ -313,7 +330,7 @@ h1 {
         transform: translateY(-150px);
     }
     .about__p {
-         font-size: 0.9rem;
+         font-size: 1.1rem;
          padding-top: 20px;
      }
     .about__p-desc {
@@ -327,13 +344,17 @@ h1 {
     .masters__carts {
         justify-content: center;
     }
-
+    .video__display-img {
+        height: 50px;
+        width: 50px;
+        padding-left: 35px;
+    }
 }
 
 
 .video__text {
     color: white;
-    font-size: 0.8rem;
+    font-size: 16px;
 }
 
 .video {
@@ -343,18 +364,14 @@ h1 {
 
 }
 
-.video__display-img {
-    height: 50px;
-    width: 50px;
-    padding-left: 35px;
-}
+
 
 .property {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    width: 300px;
+    width: 336px;
 }
 
 .property__topic {
@@ -370,6 +387,7 @@ h3 {
     font-size: 0.8rem;
     text-align: center;
     width: 75%;
+    line-height: 22px;
 }
 
 .properties {
@@ -453,11 +471,23 @@ h3 {
         margin-bottom: 70px;
         padding-right: 100px;
     }
+    .section__topic {
+        margin-bottom: 32px;
+        font-weight: 700;
+    }
+    .masters__topic {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
 }
 
 @media screen and (max-width: 1263px) {
     .goods_price {
         width: 80vw;
+    }
+    .section__topic {
+        margin-bottom: 20px;
     }
 }
 
@@ -485,10 +515,6 @@ h3 {
     margin-top: 8px;
 }
 
-.section__topic {
-    margin-bottom: 20px;
-}
-
 /*section-masters*/
 
 .masters {
@@ -514,6 +540,7 @@ h3 {
 .masters__img:hover {
     filter: brightness(70%);
     z-index: 1;
+    cursor: pointer;
 }
 
 .masters__img__text-background {
@@ -557,6 +584,7 @@ h3 {
     filter: brightness(70%);
     z-index: 1;
     transform: translateY(-40px);
+    cursor: pointer;
 }
 .works__image__background-hover {
     color: #FFFFFF;
@@ -584,6 +612,7 @@ h3 {
 .ellipse {
     opacity: 0;
     position: absolute;
+    cursor: pointer;
 }
 .ellipse-left {
     transform: translateX(-10px);
@@ -610,6 +639,9 @@ h3 {
     }
     .works__images {
        gap: 29px;
+    }
+    .contacts__info {
+        transform: translateY(40px);
     }
 }
 @media screen and (min-width: 700px) and (max-width: 1110px){
@@ -655,6 +687,11 @@ h3 {
     padding: 20px;
 }
 
+@media screen and (max-width: 700px) {
+    .contacts__button {
+        padding: 12px 120px;
+    }
+}
 @media screen and (min-width: 1200px) {
     .brands {
         margin-bottom: 113px;
@@ -667,8 +704,8 @@ h3 {
         width: 374px;
         height: 14px;
     }
-    .contacts {
-
+    .contacts__button {
+        padding: 12px 178px;
     }
 }
 
@@ -723,10 +760,6 @@ h3 {
     font-size: 16px;
 }
 
-.contacts__button {
-    padding: 12px 120px;
-}
-
 .contacts__input-last {
     margin-bottom: 30px;
 }
@@ -739,7 +772,7 @@ h3 {
 /*footer*/
 @media screen and (min-width: 1200px) {
     footer {
-        height: 30px;
+        height: 40px;
         margin: 20px 165px;
         justify-content: space-between;
         gap: unset;
