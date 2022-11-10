@@ -24,11 +24,11 @@
             </div>
             <div class="menu__items">
 
-                <p class="menu__item-p">Услуги и цены</p>
-                <p class="menu__item-p">Мастера</p>
-                <p class="menu__item-p">Наши работы</p>
-                <p class="menu__item-p">О нас</p>
-                <p class="menu__item-p">Контакты</p>
+                <a class="menu__item-a">Услуги и цены</a>
+                <a class="menu__item-a">Мастера</a>
+                <a class="menu__item-a">Наши работы</a>
+                <a class="menu__item-a">О нас</a>
+                <a class="menu__item-a">Контакты</a>
             </div>
         </div>
         <div id="number-info">
@@ -37,7 +37,7 @@
         </div>
     </div>
 
-    <div  class="header__block">
+    <div  class="header__block" id="headerNone">
         <div class="header__slogan">
             <h1>Создай свой образ
                 вместе с нами</h1>
@@ -48,7 +48,7 @@
             <img src="img/girl.png" height="510" width="524" alt="girl"/>
         </div>
 
-        <div  class="socials">
+        <div class="socials" id="">
             <img src="img/logos/logo_inst.png" height="28" width="28" alt="logo socials"/>
             <img src="img/logos/logo_vk.png" height="28" width="28" alt="logo socials"/>
             <img src="img/logos/logo_youtube.png" height="28" width="28" alt="logo socials"/>
@@ -59,7 +59,7 @@
     </div>
 
 </header>
-
+<script src="scripts/burger.js"></script>
 <section class="section">
     <h2 class="section__topic">О салоне</h2>
 
@@ -306,18 +306,19 @@
             <img src="img/logos/logo_youtube.png" alt="youtube">
         </div>
     </div>
-    <div class="contacts__form">
+    <form class="contacts__form" id="form">
         <h3>Быстрая запись</h3>
         <p class="contacts__form__desc">Наш менеджер перезвонит в течение нескольких минут, уточнит подробности и согласует время.</p>
         <label for="name"></label>
-        <input type="text" id="name" class="contacts__input" placeholder="Ваше имя">
+        <input type="text" id="name" class="contacts__input" placeholder="Ваше имя" value="">
         <label for="number"></label>
-        <input type="number" id="number" class="contacts__input contacts__input-last" placeholder="+7 (___) ___-__-__">
-        <a href="#" class="button contacts__button">Записаться</a>
+        <input type="number" id="number" class="contacts__input contacts__input-last" placeholder="+7 (___) ___-__-__" value="">
+        <button class="button contacts__button">Записаться</button>
         <p class="contacts__form__agree-p">Нажимая на кнопку вы соглашаетесь с <a href="#" class="contacts__link">обработкой персональных данных</a></p>
-    </div>
+    </form>
 
 </section>
+<script src="scripts/outputData.js"></script>
 <footer>
     <div class="footer__info">
         <p class="footer__copyright">© 2020 «Море красоты»</p>
@@ -330,6 +331,5 @@
         <a href="#" class="footer__nav__a">Контакты</a>
     </div>
 </footer>
-<script src="scripts/burger.js"></script>
 </body>
 </html>

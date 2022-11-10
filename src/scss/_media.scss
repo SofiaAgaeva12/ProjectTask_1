@@ -39,7 +39,7 @@
     font-size: 1rem;
   }
 
-  .menu__item-p {
+  .menu__item-a {
     font-size: 0.9rem;
     padding-top: 10px;
   }
@@ -170,7 +170,7 @@
   .video__display-img {
     height: 50px;
     width: 50px;
-    padding-left: 35px;
+    padding-left: 63px;
   }
 }
 
@@ -245,9 +245,10 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1100px) {
   .contacts__button {
     padding: 12px 120px;
+    border: none;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -264,6 +265,7 @@
   }
   .contacts__button {
     padding: 12px 178px;
+    border: none;
   }
 }
 

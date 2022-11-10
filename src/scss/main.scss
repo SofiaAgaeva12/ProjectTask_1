@@ -88,7 +88,7 @@ header {
   display: none;
 }
 
-.menu__item-p:hover {
+.menu__item-a:hover {
   color: #00BF78;
   cursor: pointer;
 }
@@ -426,6 +426,7 @@ h3 {
   border: 1px solid #A0A0A0;
   border-radius: 4px;
   margin-bottom: 15px;
+  padding-left: 20px;
 }
 
 .contacts__info__address {
