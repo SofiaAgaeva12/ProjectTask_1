@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' gap:; script-src 'self' data: https://localhost:3000 'unsafe-eval'; object-src *; style-src 'self' data: 'unsafe-inline'; img-src 'self' data:; media-src 'self' data:; font-src 'self' data:; connect-src *">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -24,11 +25,11 @@
             </div>
             <div class="menu__items">
 
-                <a class="menu__item-a">Услуги и цены</a>
-                <a class="menu__item-a">Мастера</a>
-                <a class="menu__item-a">Наши работы</a>
-                <a class="menu__item-a">О нас</a>
-                <a class="menu__item-a">Контакты</a>
+                <a class="menu__item-a" href="#goods">Услуги и цены</a>
+                <a class="menu__item-a" href="#masters">Мастера</a>
+                <a class="menu__item-a" href="#works">Наши работы</a>
+                <a class="menu__item-a" href="#about">О нас</a>
+                <a class="menu__item-a" href="#contacts">Контакты</a>
             </div>
         </div>
         <div id="number-info">
@@ -61,7 +62,7 @@
 </header>
 <script src="scripts/burger.js"></script>
 <section class="section">
-    <h2 class="section__topic">О салоне</h2>
+    <h2 class="section__topic" id="about">О салоне</h2>
 
     <div class="about__content">
         <div class="about__text">
@@ -97,6 +98,7 @@
     </div>
 
 </section>
+
 <section class="section">
     <h2>Популярные услуги</h2>
     <div class="products">
@@ -134,15 +136,16 @@
         </div>
     </div>
 </section>
+
 <section class="section">
-    <h2 class="section__topic">Услуги и цены</h2>
-    <div class="goods_prices__menu">
-        <a href="#" class="goods-prices__link" id="current_link">Стрижка и укладка</a>
-        <a href="#" class="goods-prices__link">Косметология</a>
-        <a href="#" class="goods-prices__link">Маникюр и педикюр</a>
-        <a href="#" class="goods-prices__link">Макияж</a>
-        <a href="#" class="goods-prices__link">Брови и ресницы</a>
-        <a href="#" class="goods-prices__link">Массаж</a>
+    <h2 class="section__topic" id="goods">Услуги и цены</h2>
+    <div class="menu-goods_prices">
+        <a href="#" class="menu-goods_prices__link" id="current_link">Стрижка и укладка</a>
+        <a href="#" class="menu-goods_prices__link">Косметология</a>
+        <a href="#" class="menu-goods_prices__link">Маникюр и педикюр</a>
+        <a href="#" class="menu-goods_prices__link">Макияж</a>
+        <a href="#" class="menu-goods_prices__link">Брови и ресницы</a>
+        <a href="#" class="menu-goods_prices__link">Массаж</a>
     </div>
     <div class="goods_prices">
 
@@ -206,7 +209,7 @@
     </div>
 </section>
 <section class="masters section">
-    <h2 class="masters__topic">Мастера</h2>
+    <h2 class="masters__topic" id="masters">Мастера</h2>
 
     <p class="masters__text">Дружная команда настоящих профессионалов</p>
     <div class="masters__carts">
@@ -243,7 +246,7 @@
 </section>
 <section>
     <div class="works__arrows">
-        <h2 class="works__h2">Наши работы</h2>
+        <h2 class="works__h2" id="works">Наши работы</h2>
         <div class="arrows">
             <img src="img/arrows/arrow-left.png" height="16" width="19" alt="arrow" class="arrow-left"/>
             <img src="img/arrows/ellipse.png" height="40" width="40" alt="ellipse" class="ellipse ellipse-left"/>
@@ -292,7 +295,7 @@
 
 </section>
 
-<section class="contacts section">
+<section class="contacts section" id="contacts">
 
     <div class="contacts__info">
         <h2>Контакты</h2>

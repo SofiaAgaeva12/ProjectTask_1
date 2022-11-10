@@ -15,9 +15,7 @@ body {
 
 header {
     background-image: url('../img/pattern.png');
-    background-size: contain;
     padding: 30px 30px 0 30px;
-
 }
 
 a {
@@ -83,7 +81,6 @@ a {
     }
 }
 
-
 .menu__items-flex {
     display: flex;
 }
@@ -118,6 +115,11 @@ a {
 
 .menu__burger__img-close {
     display: none;
+}
+
+.menu__item-a {
+    color: black;
+    cursor: pointer;
 }
 
 .menu__item-a:hover {
@@ -441,14 +443,14 @@ h3 {
     color: #00BF78;
     border-bottom: #00BF78 solid 1px;
 }
-.goods_prices__menu {
+.menu-goods_prices {
     display: none;
 }
-.goods-prices__link:hover {
+.menu-goods_prices__link:hover {
     color: #00BF78;
 }
 
-.goods-prices__link {
+.menu-goods_prices__link {
     color: black;
     font-size: 0.8rem;
 }
@@ -464,12 +466,12 @@ h3 {
         font-size: 18px;
     }
 
-    .goods_prices__menu {
+    .menu-goods_prices {
         display: flex;
         gap: 28px;
         margin-bottom: 40px;
     }
-    .goods-prices__link {
+    .menu-goods_prices__link {
         font-size: 1rem;
     }
 
@@ -675,10 +677,13 @@ h3 {
     gap: 50px;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .brands_img {
     filter: opacity(0.5);
+    display: flex;
+    align-items: center;
 }
 
 /*section-contacts*/

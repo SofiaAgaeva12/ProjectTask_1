@@ -11,6 +11,9 @@ function addClass() {
     if (!menu.classList.contains('menu__items-flex')) {
         content.style.display = 'block'
         numberInfo.style.display = 'block'
+        header[0].style.backgroundImage = "url('img/pattern.png')";
+        header[0].style.background = "contain";
+        header[0].style.backgroundColor = "none";
     }
 }
 

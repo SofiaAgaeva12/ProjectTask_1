@@ -4,7 +4,9 @@
   "description": "Агаева София Сейрановна",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -17,16 +19,16 @@
   },
   "homepage": "https://github.com/SofiaAgaeva12/ProjectTask-1#readme",
   "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "browser-sync": "^2.27.10",
-    "cssnano": "^5.1.14",
-    "gulp": "^3.9.1",
+    "autoprefixer": "^10.3.7",
+    "browser-sync": "^2.27.5",
+    "cssnano": "^5.0.8",
+    "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-postcss": "^9.0.1",
-    "gulp-sass": "^5.1.0",
+    "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
-    "postcss": "^8.4.18",
-    "sass": "^1.56.1"
+    "postcss": "^8.3.9",
+    "sass": "^1.43.2"
   },
   "dependencies": {
     "source-map-url": "^0.4.1",

@@ -1,15 +1,23 @@
 const { src, dest, series, watch, parallel } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
-const browserSync = require('browser-sync').create();
-const clean = require('gulp-clean');
-
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const sourcemaps = require('gulp-sourcemaps');
+const browserSync = require('browser-sync').create();
+const clean = require('gulp-clean');
 
+const PATHS = {
+    src: './src',
+    dist: './dist',
+    scss: `./src/scss/*.scss`,
+    html: `./src/*.html`,
+    images: `./src/img/**/*.*`
+};
+
+// Таск компиляции SASS в CSS
 function buildSass() {
-    return src('src/scss/**/*.scss')
+    return src(PATHS.scss)
         .pipe(sourcemaps.init())
         .pipe(sass({ includePaths: ['./node_modules'] }).on('error', sass.logError))
         .pipe(
@@ -22,22 +30,21 @@ function buildSass() {
             ])
         )
         .pipe(sourcemaps.write())
-        .pipe(dest('src/css'))
-        .pipe(dest('dist/css'))
+        .pipe(dest(`${PATHS.src}/css`))
+        .pipe(dest(`${PATHS.dist}/css`))
         .pipe(browserSync.stream());
 }
-// Таск компиляции SASS в CSS
 
 // Таск работы с html файлами
 function buildHtml() {
-    return src('src/**/*.html')
-        .pipe(dest('dist'))
+    return src(PATHS.html)
+        .pipe(dest(PATHS.dist))
         .pipe(browserSync.stream());
 }
 
 // Таск копирования статичных файлов
 function copy() {
-    return src(['src/images/**/*.*'], { base: 'src' }).pipe(dest('dist'));
+    return src([PATHS.images], { base: PATHS.src }).pipe(dest(PATHS.dist));
 }
 
 // Таск очистки dist
@@ -47,14 +54,14 @@ function cleanDist() {
 
 // Таск отслеживания изменения файлов
 function serve() {
-    watch('src/scss/**/*.scss', buildSass);
-    watch('src/**/*.html', buildHtml);
+    watch(PATHS.scss, buildSass);
+    watch(PATHS.html, buildHtml);
 }
 
 // Создание дев-сервера
 function createDevServer() {
     browserSync.init({
-        server: 'src',
+        server: PATHS.src,
         notify: false
     })
 }
