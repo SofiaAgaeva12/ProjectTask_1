@@ -238,7 +238,7 @@ h3 {
 
 /*section-goods_prices*/
 
-#current_link {
+.current_tab {
   color: #00BF78;
   border-bottom: #00BF78 solid 1px;
 }
@@ -246,14 +246,20 @@ h3 {
 .menu-goods_prices {
   display: none;
   
-  .menu-goods_prices__link:hover {
+  .menu-goods_prices__tab:hover {
     color: #00BF78;
   }
 
-  .menu-goods_prices__link {
-    color: black;
+  .menu-goods_prices__tab {
     font-size: 0.8rem;
   }
+}
+
+#anotherElems {
+  width: 100vw;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 25px;
 }
 
 .goods_prices {
@@ -261,9 +267,17 @@ h3 {
   gap: 30px;
   margin-top: 25px;
 
+  .goods_price-none {
+    display: none;
+  }
+
   .goods_price {
     display: flex;
     justify-content: space-between;
+
+    //.another_tabs {
+    //  display: none;
+    //}
 
     .price {
       color: #00BF78;

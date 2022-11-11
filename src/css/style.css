@@ -439,19 +439,18 @@ h3 {
 
 /*section-goods_prices*/
 
-#current_link {
+.current_tab {
     color: #00BF78;
     border-bottom: #00BF78 solid 1px;
 }
 .menu-goods_prices {
     display: none;
 }
-.menu-goods_prices__link:hover {
+.menu-goods_prices__tab:hover {
     color: #00BF78;
 }
 
-.menu-goods_prices__link {
-    color: black;
+.menu-goods_prices__tab {
     font-size: 0.8rem;
 }
 .goods_prices {
@@ -461,7 +460,18 @@ h3 {
     margin-top: 25px;
 }
 
+#anotherElems {
+    width: 100vw;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 25px;
+}
+
 @media screen and (min-width: 1263px) {
+    #anotherElems {
+        justify-content: space-between;
+    }
+
     .goods_price__topic {
         font-size: 18px;
     }
@@ -471,7 +481,7 @@ h3 {
         gap: 28px;
         margin-bottom: 40px;
     }
-    .menu-goods_prices__link {
+    .menu-goods_prices__tab {
         font-size: 1rem;
     }
 
@@ -509,11 +519,22 @@ h3 {
         width: 50vw;
         margin-left: 20vw;
     }
+    #anotherElems {
+        margin-left: 20vw;
+    }
 }
+
+/*.another_tabs {*/
+/*    display: none;*/
+/*}*/
 
 .goods_price {
     display: flex;
     justify-content: space-between;
+}
+
+.goods_price-none {
+    display: none;
 }
 
 .price {
@@ -746,6 +767,7 @@ h3 {
     border-radius: 4px;
     margin-bottom: 15px;
     padding-left: 20px;
+    outline: none;
 }
 
 .contacts__info__address {
