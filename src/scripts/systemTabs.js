@@ -4,35 +4,31 @@ anotherElementsBlock.style.display = 'none'
 
 let tabs = document.querySelectorAll('.menu-goods_prices__tab');
 
+let tabInfo = {
+    0:'.firstTab',
+    1:'.secondTab',
+    2:'.thirdTab',
+    3:'.secondTab',
+    4:'.thirdTab',
+    5:'.fifthTab'
+}
 
-let tabb = [
-    {
-        name: "drfgdfg",
-        services: [
-            {
-                title: 'yhjkihjk',
-                price: 4565,
-                desc:'ghjghjh'
-            }
-        ]
-    }
-]
 
-function changeContent(number, lastNumber, selector) {
+function changeContent(number) {
     tabs[number].addEventListener('click', function () {
-        tabs[lastNumber].classList.remove('current_tab')
+        let lastNumber = document.querySelector('.current_tab')
+        lastNumber.classList.remove('current_tab')
         tabs[number].classList.add('current_tab')
 
         elements.forEach(elem => elem.classList.add('goods_price-none'))
-
+        let selector = tabInfo[number]
         document.querySelectorAll(selector).forEach(elem => {
             elem.classList.remove('goods_price-none')
             anotherElementsBlock.style.display = 'flex'
-            elem.style.display = 'flex'
+
         })
     })
 }
-
-changeContent(1, 0, '.secondTab')
-changeContent(2, 1, '.thirdTab')
-changeContent(3, 2, '.fourthTab')
+for (let key in tabInfo) {
+    changeContent(key)
+}
