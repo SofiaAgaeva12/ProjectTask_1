@@ -9,6 +9,13 @@
     src: url("../fonts/Montserrat-VariableFont_wght.ttf")
 }
 
+@font-face {
+    font-family: 'Monterrat-Bold';
+    font-style: normal;
+    src: url("../fonts/Montserrat-Bold.ttf")
+}
+
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -108,9 +115,6 @@ a {
     .menu__burger__img-close-flex {
         display: block;
     }
-    .h2_logo {
-
-    }
 }
 
 .menu__burger__img-close {
@@ -130,6 +134,7 @@ a {
 .h2_logo {
     font-size: 1rem;
     margin-top: 6px;
+    font-family: 'Montserrat-Bold', sans-serif;
 }
 .menu__img {
     height: 30px;
@@ -152,14 +157,32 @@ a {
 
 .header__menu_topic {
     display: flex;
+    font-size: 2.5vh;
 }
 
 h1 {
-    font-size: 1.8rem;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 3vw;
+    padding-bottom: 1vw;
+    font-family: 'Montserrat-Bold', sans-serif;
 }
 
+@media screen and (max-width: 600px){
+    h1 {
+        font-size: 6.5vw;
+    }
+}
+@media screen and (max-width: 800px){
+    .slogan-p {
+        padding-top: 1.5vh;
+    }
+    .header__block {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 .header__slogan {
     height: 23vh;
     display: flex;
@@ -168,7 +191,6 @@ h1 {
 }
 
 .slogan-p {
-    padding-top: 1.5vh;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -180,6 +202,12 @@ h1 {
     margin-top: 3vh;
     align-self: center;
 }
+@media screen and (min-width: 700px) and (max-width: 1310px){
+    .slogan__button {
+        font-size: 2vw;
+    }
+}
+
 
 .button {
     background: #FB9475;
@@ -196,29 +224,22 @@ h1 {
 @media screen and (min-width: 1263px) {
 
     .slogan-p {
-        font-size: 1.1rem;
-    }
-
-    .slogan-p {
-        font-size: 0.9rem;
+        font-size: 1.2vw;
     }
 
     .burger__button {
         display: none;
     }
 
-    h2 {
-        font-size: 48px;
-    }
     .menu__items {
         display: flex;
         flex-direction: row;
-        gap: 36px;
-        font-size: 1rem;
+        gap: 28px;
     }
 
     .menu__item-a {
-        font-size: 0.9rem;
+        font-size: 1vw;
+        font-family: 'Montserrat-Bold', sans-serif;
         padding-top: 10px;
     }
 
@@ -246,13 +267,12 @@ h1 {
         padding-bottom: 52px;
     }
     h1 {
-        font-size: 2.7vw;
-        padding-bottom: 5px;
+        font-size: 2.8vw;
         text-align: left;
     }
 
     .h2_logo {
-        font-size: 1.3rem;
+        font-size: 1.7vw;
     }
 
     .header__slogan {
@@ -261,7 +281,7 @@ h1 {
     }
     .slogan__button {
         padding: 13px 30px;
-        margin-top: 3vh;
+        margin-top: 6vh;
         font-size: 1vw;
         align-self: auto;
     }
@@ -275,7 +295,7 @@ h1 {
     }
     .header__block {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;
     }
     .menu__img {
@@ -391,7 +411,7 @@ h1 {
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 2vh;
 }
 
 .property__text {
@@ -423,6 +443,7 @@ h3 {
     flex-direction: column;
     gap: 10px;
     max-width: 350px;
+    margin-top: 10px;
 }
 
 .product__text {
@@ -514,7 +535,7 @@ h3 {
     .goods_price {
         width: 80vw;
     }
-    .section__topic {
+    .goods-prices__title {
         margin-bottom: 20px;
     }
 }
@@ -679,16 +700,24 @@ h3 {
     .works__images {
         gap: 29px;
     }
-    .contacts__info {
+    .contacts__block-info {
         transform: translateY(40px);
     }
 }
 @media screen and (min-width: 700px) and (max-width: 1110px){
-    .contacts__info {
+    .contacts__block-info {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100vw;
+    }
+    .contacts__button {
+        padding: 12px 140px;
+        font-size: 1.4vh;
+        border: none
+    }
+    .contacts__info {
+        margin-left: 20px;
     }
 }
 
@@ -729,10 +758,13 @@ h3 {
     padding: 20px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 600px) {
     .contacts__button {
-        padding: 12px 120px;
+        padding: 12px 117px;
         border: none;
+    }
+    .contacts__info {
+        margin-left: 20px;
     }
 }
 
@@ -750,7 +782,7 @@ h3 {
         height: 14px;
     }
     .contacts__button {
-        padding: 17px 154px;
+        padding: 17px 146px;
         border: none;
     }
 }
@@ -761,6 +793,13 @@ h3 {
         padding: 50px;
     }
     .contacts {
+        justify-content: center;
+    }
+    .contacts__info {
+        margin-right: 20px;
+        text-align: center;
+    }
+    .contacts__socials {
         justify-content: center;
     }
 }
@@ -793,7 +832,7 @@ h3 {
 .contacts__info__exp-socials {
     padding-top: 30px;
     font-size: 0.75rem;
-    padding-bottom: 10px;
+    padding-bottom: 2vh;
 }
 
 .contacts__socials {
@@ -832,7 +871,7 @@ h3 {
 @media screen and (min-width: 700px) and (max-width: 1200px) {
     footer {
         height: 30px;
-        margin: 20px 40px;
+        margin: 30px 40px;
         justify-content: space-between;
         gap: unset;
     }

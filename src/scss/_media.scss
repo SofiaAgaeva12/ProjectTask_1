@@ -239,12 +239,12 @@
   .works__images {
     gap: 29px;
   }
-  .contacts__info {
+  .contacts__block-info  {
     transform: translateY(40px);
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1110px){
-  .contacts__info {
+  .contacts__block-info  {
     display: flex;
     flex-direction: column;
     align-items: center;

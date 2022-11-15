@@ -9,17 +9,27 @@ function addClass() {
     content.style.display = 'none'
     numberInfo.style.display = 'none'
     if (!menu.classList.contains('menu__items-flex')) {
-        content.style.display = 'block'
-        numberInfo.style.display = 'block'
-        header[0].style.backgroundImage = "url('img/pattern.png')";
-        header[0].style.background = "contain";
-        header[0].style.backgroundColor = "none";
+        returnContent()
     }
 }
 
 button_activate_menu.addEventListener("click", addClass);
+let button = document.querySelector('button')
+let items = document.querySelectorAll('.menu__item-a')
 
-document.getElementById('menu-toggle')
-    .addEventListener('click', function(){
-        document.body.classList.toggle('nav-open');
-    });
+for (let item of items) {
+    item.addEventListener('click', function () {
+        menu.classList.remove("menu__items-flex")
+        returnContent()
+        button.classList.remove('opened');
+    })
+}
+
+function returnContent() {
+    content.style.display = 'flex'
+    numberInfo.style.display = 'block'
+    header[0].style.backgroundImage = "url('img/pattern.png')";
+    header[0].style.background = "contain";
+    header[0].style.backgroundColor = "none";
+}
+
