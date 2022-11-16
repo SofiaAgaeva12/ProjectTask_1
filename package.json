@@ -31,6 +31,7 @@
     "sass": "^1.43.2"
   },
   "dependencies": {
+    "@fancyapps/ui": "^4.0.31",
     "source-map-url": "^0.4.1",
     "urix": "^0.1.0"
   }

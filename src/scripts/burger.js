@@ -12,7 +12,11 @@ function addClass() {
         returnContent()
     }
 }
-
+function changeClassOpened() {
+    this.classList.toggle('opened');
+    this.setAttribute('aria-expanded', this.classList.contains('opened'))
+}
+button_activate_menu.addEventListener("click", changeClassOpened);
 button_activate_menu.addEventListener("click", addClass);
 let button = document.querySelector('button')
 let items = document.querySelectorAll('.menu__item-a')
