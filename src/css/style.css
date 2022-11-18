@@ -20,6 +20,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/*modal-form*/
+
 @media screen and (min-width: 925px) {
     .modal-window {
         width: 40vh;
@@ -58,8 +60,6 @@ body {
     padding-left: 20px;
     outline: none;
 }
-/*modal-form*/
-
 .modal-active {
     position: fixed;
     top: 0;

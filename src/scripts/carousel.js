@@ -1,6 +1,5 @@
 import {Carousel, Fancybox} from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox.css";
-
 let gallery = [
     {
         src: "img/works/work-1.png",

@@ -1,9 +1,41 @@
 @media screen and (max-width: 660px){
+  .modal__button {
+    padding: 1.5vh 24vw;
+  }
+}
+@media screen and (min-width: 660px){
+  .modal__button {
+    padding: 1.5vh 13vh;
+  }
+}
+
+@media screen and (min-width: 925px) {
+  .modal-window {
+    width: 40vh;
+  }
+  .modal__input {
+    display: block;
+    width: 27vw;
+    -webkit-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    box-sizing:content-box;
+  }
+}
+@media screen and (max-width: 924px) {
+  .modal__input {
+    display: block;
+    width: 60vw;
+    -webkit-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    box-sizing:content-box;
+  }
+}
+
+@media screen and (max-width: 660px){
   .menu__items-none {
     display: none;
   }
 }
-
 @media screen and (max-width: 1200px){
   .menu__items {
     flex-direction: column;
@@ -17,30 +49,55 @@
   }
 
   h2 {
-    font-size: 48px;
+    font-size: 38px;
   }
+
   .menu__burger__img-close-flex {
     display: block;
   }
 }
 
+@media screen and (max-width: 600px){
+  h1 {
+    font-size: 6.5vw;
+  }
+}
+@media screen and (max-width: 800px){
+  .slogan-p {
+    padding-top: 1.5vh;
+  }
+  .header__block {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1310px){
+  .slogan__button {
+    font-size: 2vw;
+  }
+}
 @media screen and (min-width: 1263px) {
+
+  .slogan-p {
+    font-size: 1.2vw;
+  }
+
   .burger__button {
     display: none;
   }
 
-  h2 {
-    font-size: 48px;
-  }
   .menu__items {
     display: flex;
     flex-direction: row;
-    gap: 36px;
-    font-size: 1rem;
+    gap: 28px;
   }
 
   .menu__item-a {
-    font-size: 0.9rem;
+    font-size: 1vw;
+    font-family: 'Montserrat-Bold', sans-serif;
     padding-top: 10px;
   }
 
@@ -68,13 +125,12 @@
     padding-bottom: 52px;
   }
   h1 {
-    font-size: 2.7rem;
-    padding-bottom: 5px;
+    font-size: 2.8vw;
     text-align: left;
   }
 
   .h2_logo {
-    font-size: 1.3rem;
+    font-size: 1.7vw;
   }
 
   .header__slogan {
@@ -83,8 +139,8 @@
   }
   .slogan__button {
     padding: 13px 30px;
-    margin-top: 7vh;
-    font-size: 0.8rem;
+    margin-top: 6vh;
+    font-size: 1vw;
     align-self: auto;
   }
   .socials {
@@ -97,7 +153,7 @@
   }
   .header__block {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
   }
   .menu__img {
@@ -143,8 +199,8 @@
     width: 60px;
     padding-left: 60px;
   }
-}
 
+}
 @media screen and (max-width: 1260px) {
   .video__img {
     height: 25vh;
@@ -178,6 +234,7 @@
   #anotherElems {
     justify-content: space-between;
   }
+
   .goods_price__topic {
     font-size: 18px;
   }
@@ -203,28 +260,32 @@
     margin-bottom: 32px;
     font-weight: 700;
   }
+  .section__topic-size {
+    font-size: 48px;
+    font-family: 'Montserrat-Bold', sans-serif;
+  }
   .masters__topic {
     margin-top: 30px;
     margin-bottom: 10px;
   }
-}
 
+}
 @media screen and (max-width: 1263px) {
   .goods_price {
     width: 80vw;
   }
-  .section__topic {
+  .goods-prices__title {
     margin-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 700px) and (max-width: 1263px) {
+
   .goods_prices {
     width: 50vw;
     margin-left: 20vw;
   }
   #anotherElems {
-    width: 50vw;
     margin-left: 20vw;
   }
 }
@@ -239,49 +300,73 @@
   .works__images {
     gap: 29px;
   }
-  .contacts__block-info  {
+  .contacts__block-info {
     transform: translateY(40px);
   }
 }
-@media screen and (min-width: 700px) and (max-width: 1110px){
-  .contacts__block-info  {
+@media screen and (min-width: 800px) and (max-width: 1200px){
+  .contacts__block-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
   }
-}
-
-@media screen and (max-width: 1100px) {
   .contacts__button {
-    padding: 12px 120px;
-    border: none;
+    padding: 12px 140px;
+    font-size: 1.4vh;
+    border: none
+  }
+  .contacts__info {
+    margin-left: 20px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .contacts__button {
+    padding: 12px 117px;
+    border: none;
+  }
+  .contacts__info {
+    margin-left: 20px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .brands {
     margin-bottom: 113px;
   }
   .contacts__form {
-    width: 445px;
+    width: 375px;
     padding: 40px;
+    margin-right: 100px;
   }
-  .contacts__input {
+  input, select {
+    display: block;
     width: 374px;
-    height: 14px;
+    -webkit-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+
+    box-sizing:content-box;
   }
   .contacts__button {
-    padding: 12px 178px;
+    padding: 17px 146px;
     border: none;
   }
 }
 
 @media screen and (min-width: 700px) and (max-width: 1200px) {
   .contacts__form {
-    width: 445px;
-    padding: 40px;
+    width: 375px;
+    padding: 50px;
   }
   .contacts {
+    justify-content: center;
+  }
+  .contacts__info {
+    margin-right: 20px;
+    text-align: center;
+  }
+  .contacts__socials {
     justify-content: center;
   }
 }
@@ -297,12 +382,13 @@
     gap: 28px;
     align-items: center;
   }
+
 }
 
 @media screen and (min-width: 700px) and (max-width: 1200px) {
   footer {
     height: 30px;
-    margin: 20px 40px;
+    margin: 30px 40px;
     justify-content: space-between;
     gap: unset;
   }
@@ -310,6 +396,7 @@
     gap: 28px;
     align-items: center;
   }
+
 }
 
 @media screen and (max-width: 700px) {
