@@ -291,9 +291,11 @@ h1 {
     margin-top: 3vh;
     align-self: center;
 }
-@media screen and (min-width: 700px) and (max-width: 1310px){
+@media screen and (min-width: 700px) and (max-width: 1263px){
     .slogan__button {
-        font-size: 2vw;
+        font-size: 1.5vw;
+        align-self: auto;
+        margin: 20px auto;
     }
 }
 
@@ -725,9 +727,15 @@ h3 {
 
 .works__images {
     display: flex;
-    flex-wrap: wrap;
+    gap: 30px;
+    white-space: nowrap;
+    overflow-x: auto;
     margin-top: 20px;
     justify-content: center;
+}
+
+.works__images::-webkit-scrollbar {
+    width: 0;
 }
 
 .carousel {
@@ -740,11 +748,26 @@ h3 {
     --carousel-button-svg-height: 20px;
     --carousel-button-svg-stroke-width: 2.5;
 }
-
+.swiper-slide {
+    display: flex;
+    justify-content: space-between;
+}
 .works__image {
     position: relative;
     z-index: 3;
+
 }
+
+@media screen and (max-width: 700px) {
+    .works__image {
+        width: 250px;
+        height: 250px;
+    }
+}
+.block__slider {
+    width: 338px;
+}
+
 
 .works__image:hover {
     filter: brightness(70%);
@@ -771,6 +794,13 @@ h3 {
     position: relative;
     z-index: 2;
 }
+
+.arrow-left:hover {
+    cursor: pointer;
+}
+.arrow-right:hover {
+    cursor: pointer;
+}
 .arrow-right {
     position: relative;
     z-index: 3;
@@ -796,7 +826,7 @@ h3 {
     display: none;
 }
 
-@media screen and (min-width: 1263px) {
+@media screen and (min-width: 663px) {
     .arrows {
         display: flex;
         gap: 10px;
@@ -806,11 +836,11 @@ h3 {
     .works__images {
         gap: 29px;
     }
-    .contacts__block-info {
-        transform: translateY(40px);
-    }
 }
-@media screen and (min-width: 800px) and (max-width: 1200px){
+@media screen and (min-width: 760px) and (max-width: 1200px){
+    .contacts__title {
+        align-items: center;
+    }
     .contacts__block-info {
         display: flex;
         flex-direction: column;
@@ -894,6 +924,9 @@ h3 {
     .contacts__button {
         padding: 17px 146px;
         border: none;
+    }
+    .contacts__block-info {
+        transform: translateY(40px);
     }
 }
 

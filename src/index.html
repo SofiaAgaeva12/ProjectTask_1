@@ -7,9 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Content-Security-Policy">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
     <title>Document</title>
 </head>
 <body>
@@ -24,19 +25,19 @@
                value="">
         <label for="selectService" class="modal__desc">Выберите мастера</label>
         <select name="masterId" id="selectService" class="modal__input">
-            <option value="nail service">Краснова Ирина</option>
-            <option value="artist-stylist">Калилова Жанна</option>
-            <option value="hairdresser">Киселева Алина</option>
-            <option value="nail service">Иванова Елена</option>
+            <option value="1">Краснова Ирина</option>
+            <option value="2">Калилова Жанна</option>
+            <option value="3">Киселева Алина</option>
+            <option value="4">Иванова Елена</option>
         </select>
         <label for="selectMaster" class="modal__desc">Выберите услугу</label>
         <select name="serviceId" id="selectMaster" class="modal__input">
-            <option value="">Женская стрижка</option>
-            <option value="">Мужская стрижка</option>
-            <option value="">Детский Стиль</option>
-            <option value="">Стрижка бороды и усов</option>
-            <option value="">Укладка дневная</option>
-            <option value="">Прическа вечерняя (свадебная)</option>
+            <option value="1">Женская стрижка</option>
+            <option value="2">Мужская стрижка</option>
+            <option value="3">Детский Стиль</option>
+            <option value="4">Стрижка бороды и усов</option>
+            <option value="5">Укладка дневная</option>
+            <option value="6">Прическа вечерняя (свадебная)</option>
 
         </select>
         <label for="DateOfVisit" class="modal__desc">Дата визита</label>
@@ -366,9 +367,9 @@
             <img src="img/arrows/ellipse.png" height="40" width="40" alt="ellipse" class="ellipse ellipse-right"/>
         </div>
     </div>
-    <div class="works__images carousel multiple-items" id="mainCarousel">
+    <div class="works__images carousel" id="mainCarousel">
 
-            <div>
+        <div class="works__work">
                 <a
                         href="img/works/work-1.png"
                         data-fancybox="gallery"
@@ -381,7 +382,7 @@
                     <p class="works__image__background-hover__text">Увеличить</p>
                 </div>
             </div>
-        <div>
+        <div class="works__work">
             <a
                     href="img/works/work-2.png"
                     data-fancybox="gallery"
@@ -394,7 +395,7 @@
                 <p class="works__image__background-hover__text">Увеличить</p>
             </div>
         </div>
-        <div>
+        <div class="works__work">
             <a
                     href="img/works/work-3.png"
                     data-fancybox="gallery"
@@ -407,8 +408,7 @@
                 <p class="works__image__background-hover__text">Увеличить</p>
             </div>
         </div>
-
-        <div>
+        <div class="works__work">
             <a
                     href="img/works/work-4.png"
                     data-fancybox="gallery"
@@ -421,7 +421,32 @@
                 <p class="works__image__background-hover__text">Увеличить</p>
             </div>
         </div>
-
+        <div class="works__work">
+            <a
+                    href="img/works/work-1.png"
+                    data-fancybox="gallery"
+                    data-caption="work-1"
+            >
+                <img src="img/works/work-1.png" alt="image of works" height="338" width="338" class="works__image"/>
+            </a>
+            <div class="works__image__background-hover">
+                <img src="img/loupe.png" height="48" width="48" alt="loupe"/>
+                <p class="works__image__background-hover__text">Увеличить</p>
+            </div>
+        </div>
+        <div class="works__work work-last">
+            <a
+                    href="img/works/work-2.png"
+                    data-fancybox="gallery"
+                    data-caption="work-1"
+            >
+                <img src="img/works/work-2.png" alt="image of works" height="338" width="338" class="works__image"/>
+            </a>
+            <div class="works__image__background-hover">
+                <img src="img/loupe.png" height="48" width="48" alt="loupe"/>
+                <p class="works__image__background-hover__text">Увеличить</p>
+            </div>
+        </div>
 
     </div>
 
@@ -440,7 +465,7 @@
 <section class="contacts section" id="contacts">
 
     <div class="contacts__block-info">
-        <h2 class="section__topic-size">Контакты</h2>
+        <h2 class="section__topic-size contacts__title">Контакты</h2>
         <div class="contacts__info">
             <p class="contacts__info__p contacts__info__address">Томск, проспект Ленина, дом 13</p>
             <p class="contacts__info__p">8 (499) 686-17-62</p>
@@ -489,6 +514,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="scripts/maskForPhone.js"></script>
 <script src="scripts/sendData.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="scripts/slider.js"></script>
 </body>
 </html>
