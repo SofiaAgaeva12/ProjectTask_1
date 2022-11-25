@@ -89,6 +89,13 @@ body {
     background-color: white;
     border-radius: 15px;
 }
+
+.input-invalid:invalid {
+    border: 1px solid #cb0a0a;
+}
+/*input, .modal__input:invalid {*/
+/*    border: 1px solid #cb0a0a;*/
+/*}*/
 @media screen and (max-width: 660px){
     .modal__button {
         padding: 1.5vh 24vw;

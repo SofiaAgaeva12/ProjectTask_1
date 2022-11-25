@@ -19,10 +19,10 @@
     <form class="modal__form" id="formModal">
         <h3 class="modal__title">Расширенная форма записи</h3>
         <label for="nameModal"></label>
-        <input type="text" name="name" id="nameModal" class="modal__input" placeholder="Ваше имя" value="">
+        <input type="text" name="name" id="nameModal" class="modal__input" placeholder="Ваше имя" value="" required>
         <label for="numberModal"></label>
         <input name="phone" id="numberModal" class="modal__input contacts__input-last" placeholder="+7 (___) ___-__-__"
-               value="">
+               value="" required>
         <label for="selectService" class="modal__desc">Выберите мастера</label>
         <select name="masterId" id="selectService" class="modal__input">
             <option value="1">Краснова Ирина</option>
@@ -41,7 +41,7 @@
 
         </select>
         <label for="DateOfVisit" class="modal__desc">Дата визита</label>
-        <input type="date" name="visitDate" id="DateOfVisit" class="modal__input" placeholder="">
+        <input type="date" name="visitDate" id="DateOfVisit" class="modal__input" placeholder="" required>
         <button class="button modal__button" id="buttonEnroll">Записаться</button>
     </form>
 </div>

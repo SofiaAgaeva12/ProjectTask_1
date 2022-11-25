@@ -1,3 +1,4 @@
+
 let modalWindow = document.querySelector('div.modal-window')
 let modalPhone = document.querySelector('div.modal-active')
 
